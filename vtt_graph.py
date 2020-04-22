@@ -96,7 +96,6 @@ class Node:
         #out edges lock acquire
         for out_edge in self.out_edges:
             out_edge.lock.acquire()
-        #BARRIER!!
         self.graph.barrier.wait()
 
     def execute(self):

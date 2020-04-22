@@ -130,10 +130,3 @@ class AnsSelectModel():
 
         return [final_answer]
 
-if __name__ == '__main__':
-    q_text = "question sample"
-    d_text = "description example"
-    c = "answer1"
-    d = "answer2"
-    init_result = init()
-    inference(init_result, {"question":q_text, "a": d_text, "c" : c, "d" : d})
